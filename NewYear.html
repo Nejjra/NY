@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NY Invitation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class = "container">
+        <div>
+            <h1 class = "header_text">Do you wanna spend New Year's Eve with me?</h1>
+        </div>
+        <div class="gif_container">
+            <img src="https://media0.giphy.com/media/ZETg64fW7xb0gr4NEz/giphy.gif?cid=ecf05e47ywa3f8dbthzp7xtqhl8f0jxj94ld5fujvy8703bq&ep=v1_stickers_search&rid=giphy.gif&ct=s">
+        </div>
+        <div>
+                <iframe width="0" height="0" src="https://www.youtube.com/embed/Rnil5LyK_B0?si=8S558ROEmlMWrghQ&autoplay=1" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class = "buttons">
+            <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
+            <button class="btn" id="noButton" onmouseover="moveButton()">No</button>
+            <script>
+                function nextPage() {
+                    window.location.href = "yes.html";
+                }
+
+                function moveButton() {
+                    var button = document.getElementById('noButton');
+                    var x = Math.random() * (window.innerWidth - button.offsetWidth);
+                    var y = Math.random() * (window.innerHeight - button.offsetHeight);
+                    button.style.position = 'absolute';
+                    button.style.left = x + 'px';
+                    button.style.top = y + 'px';
+                }
+            </script>
+
+        </div>
+
+    </div>
+</body>
+</html>
