@@ -2,7 +2,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 96vh;
+    height: 80vh;
     background-color: rgb(238, 184, 192);
 }
 
@@ -30,7 +30,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: -50px;
     margin-left: 20px;
 }
 
